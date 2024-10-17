@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+    <section class="product-details">
+        <div class="product-image">
+            <img src="/media/handbag.jpg" alt="Product Image">
+        </div>
+        <div class="product-info">
+            <h2>Product Name</h2>
+            <p>Product Description</p>
+            <p>Price: $19.99</p>
+            <button>Buy Now</button>
+        </div>
+    </section>
+    <section class="product-reviews">
+        <h2>Customer Reviews</h2>
+        <ul>
+            <li>
+                <div class="review-rating">4.5/5</div>
+                <p>Great product! Highly recommend.</p>
+            </li>
+            <li>
+                <div class="review-rating">4/5</div>
+                <p>Good product, but slightly expensive.</p>
+            </li>
+        </ul>
+    </section>
+    <section class="product-related">
+        <h2>Related Products</h2>
+        <ul>
+            <li>
+                <img src="images/related-product1.jpg" alt="Related Product 1">
+                <p>Related Product 1</p>
+            </li>
+            <li>
+                <img src="images/related-product2.jpg" alt="Related Product 2">
+                <p>Related Product 2</p>
+            </li>
+        </ul>
+    </section>
+
+{% endblock %}

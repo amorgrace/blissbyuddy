@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+/* category section */
+
+.categories {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    grid-gap: 20px; /* Space between the items */
+    width: 95%; /* Full width */
+    margin-top: 20px;
+    margin-left: 38px;
+    overflow-x: hidden;
+}
+
+.categories div {
+    position: relative; /* Enable positioning for text and button */
+    text-align: center;
+}
+
+.categories img {
+    width: 100%; /* Full width for each image */
+    height: 800px; /* Adjust height automatically */
+    aspect-ratio: 16/9; /* Maintain the aspect ratio to prevent distortion */
+    object-fit: cover; /* Ensure the image fills the area without leaving space */
+    display: block;
+}
+
+.categories p, .categories button {
+    position: absolute;
+    
+    left: 50%;
+    transform: translateX(-50%); /* Center horizontally */
+    color: white; /* White text for better contrast */
+}
+
+.categories p {
+    background: none;
+    width: 2000px;
+    top: 68%; /* Position text near the top */
+    font-size: 50px; /* Adjust font size */
+    font-weight: 700; /* Make the text bold */
+    margin: 0;
+}
+
+.categories button {
+    bottom: 18%; /* Position button near the bottom */
+    background-color: bisque; /* Set button background color to black */
+    color: black; /* Set button text color to white */
+    border: 3px solid;
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.categories button:hover {
+    background-color: black; /* Darker background on hover */
+    color: white;
+}
+
+.walkway {
+    margin-top: 20px;
+    position: relative; /* Enables positioning of text and button over the video */
+    width: 100%; /* Full width of the viewport */
+    height: 80vh; /* Full height of the viewport */
+    overflow-y: hidden;
+}
+
+.walkway video {
+    overflow: hidden;
+    width: 100%; /* Make the video span the full width */
+    height: 100%; /* Make the video span the full height */
+    object-fit: cover; /* Ensures the video covers the entire area without distortion */
+}
+
+.walkway p, .walkway button {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); /* Center horizontally */
+    color: white; /* White text for contrast on video */
+}
+
+.walkway p {
+    background: none;
+    width: 1500px;
+    top: 70%; /* Position the text slightly above the button */
+    font-size: 30px; /* Adjust the font size */
+    font-weight: 200; /* Make the text bold */
+    font-family: "Playfair Display", serif;
+    text-align: center;
+    margin: 0;
+}
+
+.walkway button {
+    position: absolute;
+    bottom: 7%; /* Position the button below the text */
+    left: 21%;
+    transform: translateX(-50%); /* Center the button horizontally */
+    color: white; /* Set text color to white */
+    background-color: transparent; /* Semi-transparent background */
+    padding: 15px 200px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 2px solid;
+    border-radius: 25px;
+    backdrop-filter: blur(50px); /* Blurs the background behind the button */
+    transition: background-color 2s ease; /* Smooth hover effect */
+}
+
+.walkway button:hover {
+    background-color: white; /* Darken background on hover */
+    color: black;
+}
+

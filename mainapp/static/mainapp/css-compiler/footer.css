@@ -1,0 +1,180 @@
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+/* The footer is fixed to the bottom of the page */
+
+
+.footer-distributed {
+    background: linear-gradient(to right, #25023f, black);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px "Jost", sans-serif;
+    padding: 50px 50px 60px 50px;
+    margin-top: 80px;
+}
+
+.footer-distributed .footer-left, .footer-distributed .footer-center, .footer-distributed .footer-right {
+    display: inline-block;
+    background-color: transparent;
+    vertical-align: top;
+}
+
+/* Footer left */
+
+.footer-left {
+    width: 30%;
+}
+
+.footer-distributed h3 {
+    color: #ffffff;
+    font: normal 36px 'Cookie', cursive;
+    margin: 0;
+    background-color: transparent;
+}
+
+
+.footer-distributed h3 span {
+    color: #e0ac1c;
+    background-color: transparent;
+}
+
+.footer-left p {
+    background-color: transparent;
+}
+
+
+/* Footer links */
+
+.footer-links {
+    color: #ffffff;
+    margin: 20px 0 12px;
+}
+
+.footer-links p, .footer-links a {
+    background-color: transparent;
+}
+
+.footer-links a {
+    /* display: inline-block; */
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+    background-color: transparent;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 100;
+}
+
+.footer-company-name {
+    color: #8f9296;
+    margin: 0;
+}
+
+/* Footer Center */
+
+.footer-center {
+    width: 35%;
+    background-color: transparent;
+}
+
+.footer-center div {
+    background-color: transparent;
+}
+
+.footer-center p {
+    background-color: transparent;
+}
+
+.footer-email {
+    background-color: transparent;
+}
+
+.footer-center i {
+    background-color: #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+
+.footer-center i.fa-envelope {
+    font-size: 17px;
+    line-height: 38px;
+}
+
+.footer-center p {
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin: 0;
+}
+
+.footer-center p span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.footer-center p a {
+    color: #e0ac1c;
+    text-decoration: none;
+    ;
+}
+
+/* Footer Right */
+
+.footer-right {
+    width: 30%;
+}
+
+.footer-company-about {
+    line-height: 20px;
+    color: #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0;
+    background-color: transparent;
+}
+
+.footer-company-about span {
+    display: block;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    background-color: transparent;
+}
+
+.footer-icons {
+    margin-top: 25px;
+}
+
+
+.footer-icons a{
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: #33383b;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+    background-color: transparent;
+}
+
+.footer-icons {
+    background-color: transparent;
+}
+
+.footer-icons i {
+    background-color: transparent;
+}

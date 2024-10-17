@@ -1,0 +1,188 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<body>
+
+
+    <!-- Hero Section -->
+
+    <section class="hero">
+        <img src="/media/white-bg-hero.jpg" alt="">
+        <p>New</p>
+        <h1> Explore Bliss Collection 2024</h1>
+        <a href="{% url 'products' %}" class="hero-btn">Shop Now</a>
+    </section>
+
+    <!-- Categories section -->
+
+    <section class="categories">
+        <div>
+            <img src="/media/handbag.jpg" alt="">
+            <p>SUMMER HANDBAGS</p>
+            <button>CHECKOUT NEW STYLES</button>
+        </div>
+
+        <div>
+            <img src="/media/hero-cloth.jpg" alt="">
+            <P>NEW CLOTHINGS</P>
+            <button>DISCOVER FRESH FASHION</button>
+        </div>
+
+        <div>
+            <img src="/media/hero-shoes.jpg" alt="">
+            <P>DELUXE SHOES</P>
+            <button>NEW TREND HORIZONS</button>
+        </div>
+
+        <div>
+            <img src="/media/hero-accessories.jpg" alt="">
+            <P>ACCESSORIES</P>
+            <button>UNVIEL THE ALLURE</button>
+        </div>
+    </section>
+
+    <!-- videoplayout after category -->
+
+    <div class="walkway">
+        <video src="/media/walkway.mp4" autoplay muted loop playsinline></video>
+        <p>Women and fashion have been intertwined throughout history, serving as a powerful expression of identity, culture, and individuality.</p>
+        <button> TRY OUR CLASSICS</button>
+    </div>
+    
+
+    <!-- Featured Section -->
+
+    <section class="featured">
+        <h1>Featuring the Newest Bliss Products</h1>
+        <div class="featured-items">
+
+            {% for product in products %}
+            <div class="ft-box-items">
+              <div class="ft-box-items-contents">
+                <a href="{% url 'product' product.id %}">
+                  <img src="{{ product.image.url }}" alt="">
+                </a>
+                
+                <h2>{{ product.name }}</h2>
+
+                <h3>{{ product.type }}</h3>
+                <h4>₦{{ product.price }}</h4>
+              </div>
+
+              <div class="cart-item">
+                <a href="" class="add-cart">Add to Cart</a>
+              </div>
+
+            </div>
+            {% endfor %}
+
+            <!-- <div class="ft-box-items">
+                <img src="/media/ft-bag3.webp" alt="">
+                <h2>SHALEWA HANDBAG</h2>
+                <h3>Dove black leather bag</h3>
+                <h4>N15,000</h4>
+            </div>
+
+            <div class="ft-box-items">
+                <img src="/media/ft-shoe2.webp" alt="">
+                <h2>KOIKOI PROMAX</h2>
+                <h3>black seal leather shoe</h3>
+                <h4>N10,000</h4>
+            </div>
+
+            <div class="ft-box-items">
+                <img src="/media/ft-dress1.webp" alt="">
+                <h2>AHSAWO GOWN</h2>
+                <h3>black faint cotton</h3>
+                <h4>N25,000</h4>
+            </div>
+            <div class="ft-box-items">
+                <img src="/media/fit-dress2.webp" alt="">
+                <h2>OLOSHO GOWN</h2>
+                <h3>Grey bright cotton</h3>
+                <h4>N15,000</h4>
+            </div>
+
+            <div class="ft-box-items">
+                <img src="/media/ft-shoe.webp" alt="">
+                <h2>KOIKOI SHOE</h2>
+                <h3>Thick leader shoe</h3>
+                <h4>N9,000</h4>
+            </div>
+
+            <div class="ft-box-items">
+                <img src="/media/ass-hat.webp" alt="">
+                <h2>BEACH HATS</h2>
+                <h3>brown handmade hat</h3>
+                <h4>6,000</h4>
+            </div>
+
+            <div class="ft-box-items">
+                <img src="/media/ass-watch.webp" alt="">
+                <h2>SHEIN WATCH</h2>
+                <h3>Glassy shien watch</h3>
+                <h4>N17,000</h4>
+            </div> -->
+
+        </div>
+    </section>
+
+
+    <!-- Reviews section -->
+
+    <div class="reviews">
+        <div class="reviews-header">
+          <p>REVIEWS</p>
+          <h1>What our clients say about us.</h1>
+        </div>
+
+        <div class="reviews-grid">
+
+          <div class="reviews-card">
+            <span><i class="ri-double-quotes-l"></i></span>
+            <p>
+              I've been working with these guys for a long time and I can say that
+              my house is in the perfect hands.
+            </p>
+            <hr />
+            <img src="/media/review1.jpg" alt="user" />
+            <p class="reviews-name">Allan Collins</p>
+          </div>
+
+          <div class="reviews-card">
+            <span><i class="ri-double-quotes-l"></i></span>
+            <p>
+              Working with Sentry Oak is just great, every problem in my house is
+              solved in a matter of days.
+            </p>
+            <hr />
+            <img src="/media/review2.jpg" alt="user" />
+            <p class="reviews-name">Clay Washington</p>
+          </div>
+
+          <div class="reviews-card">
+            <span><i class="ri-double-quotes-l"></i></span>
+            <p>
+              Once a pipe burst in my kitchen and an hour later it was already
+              repaired, thanks to Sentry Oak.
+            </p>
+            <hr />
+            <img src="/media/review3.jpg" alt="user" />
+            <p class="reviews-name">Tanya Grant</p>
+          </div>
+        </div>
+
+        <div class="reviews-footer">
+          <p>
+            "BlissByUddy offers premium, stylish fashion products, combining elegance and quality to elevate your wardrobe with timeless pieces."
+          </p>
+          <button>ADD A REVIEW</button>
+        </div>
+    </div>
+
+
+    <!-- footer -->
+
+{% endblock %}
+
+

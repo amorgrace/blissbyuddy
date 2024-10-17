@@ -1,0 +1,74 @@
+/* Styles for Index.html */
+
+@import url('header.css');
+@import url('hero.css');
+@import url('category.css');
+@import url('featured.css');
+@import url('review.css');
+@import url('footer.css');
+@import url('login-regi.css');
+
+
+.product-hero-info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.product-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 2em;
+}
+
+.product-image {
+    flex-basis: 40%;
+}
+
+.product-image img {
+    width: 70%;
+    height: 70%;
+    display: flex;
+    object-fit: contain;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.product-info {
+    flex-basis: 60%;
+    padding: 20px;
+}
+
+.product-info h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.product-info p {
+    margin-bottom: 20px;
+}
+
+.product-info button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.product-reviews {
+    padding: 2em;
+}
+
+.review-rating {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.product-related {
+    padding: 2em;
+}
