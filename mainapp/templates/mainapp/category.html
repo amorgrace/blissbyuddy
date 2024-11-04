@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<section class="featured">
+  <h1>{{category.name}}</h1>
+  <div class="featured-items">
+
+      {% for product in products %}
+      <div class="ft-box-items">
+        <div class="ft-box-items-contents">
+          <a href="{% url 'product' product.id %}">
+            <img src="{{ product.image.url }}" alt="">
+          </a>
+          
+          <h2>{{ product.name }}</h2>
+
+          <h3>{{ product.type }}</h3>
+          <h4>₦{{ product.price }}</h4>
+        </div>
+
+        <div class="cart-item">
+          <a href="" class="add-cart">Add to Cart</a>
+        </div>
+
+      </div>
+      {% endfor %}
+
+  </div>
+</section>
+
+{% endblock %}

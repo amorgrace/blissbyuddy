@@ -12,6 +12,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css">
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
     <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.10.0/lottie.min.js"></script>
+    
+
     <script src="../static/mainapp/js-compiler/scripts.js"></script>
 
 
@@ -47,10 +50,11 @@
     <div class="submenu" id="submenu">
         <a href="#" class="submenu-close" id="close-menu"><i class="fas fa-times"></i></a>
         <ul>
-            <li><a href="#">Bags</a></li>
-            <li><a href="#">Shoes</a></li>
-            <li><a href="#">Accessories</a></li>
-            <li><a href="#">Clothes</a></li>
+            <li><a href="{% url 'category' 'Bags'%}">Bags</a></li>
+            <li><a href="{% url 'category' 'Clothes'%}">Clothes</a></li>
+            <li><a href="{% url 'category' 'Shoes'%}">Shoes</a></li>
+            <li><a href="{% url 'category' 'Accessories'%}">Accessories</a></li>
+
             <li><a href="#">About Us</a></li>
         </ul>
     </div>  

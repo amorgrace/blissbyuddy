@@ -3,17 +3,93 @@
 {% block content %}
 
     <section class="product-details">
-        <div class="product-image">
-            <img src="/media/handbag.jpg" alt="Product Image">
+        <div class="product-details-left">
+            <div class="product-image">
+                <img src="{{product.image.url}}" alt="Product Image">
+            </div>
+    
         </div>
-        <div class="product-info">
-            <h2>Product Name</h2>
-            <p>Product Description</p>
-            <p>Price: $19.99</p>
-            <button>Buy Now</button>
+
+
+
+        {% load humanize %}
+
+        <div class="product-details-right">
+            <h1>{{product.name}}</h1>
+            <h2>₦{{ product.price|intcomma }}</h2>
+            <p><strong>Description:</strong> <span>{{product.description}}</span></p>
+            <p><strong>Type:</strong> <span>{{product.type}}</span></p>
+            
+
+            <label for="sizes">SIZE</label>
+            <select name="sizes" id="sizes">
+                <option value="S">S</option>
+                <option value="M">M</option>
+                <option value="L">L</option>
+                <option value="XL">XL</option>
+                <option value="XXL">XXL</option>
+            </select>
+
+            <br><br>
+
+            <label for="quantity">Quantity</label>
+            <select name="quantity" id="quantity">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+
+            <a class="product-cart" href="http://">Add to Cart</a>
+
+            <a class="product-buynow" href="http://">Buy Now</a>
+
+            <p>Estimated Delivery: Same day delivery</p>
+
+            <div class="product-socials">
+                <a href="#"><img src="/media/icons8-instagram-48.png" alt=""></a>
+                <a href="#"><img src="/media/icons8-snapchat-48.png" alt=""></a>
+
+            </div>
         </div>
+
     </section>
-    <section class="product-reviews">
+
+    {% load static %}
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+        const lottieContainers = document.querySelectorAll('.product-lotties div');
+
+        lottieContainers.forEach(container => {
+            const path = container.getAttribute('data-path');
+
+            lottie.loadAnimation({
+                container: container,
+                renderer: 'svg',
+                loop: true,
+                autoplay: true,
+                path: path
+            });
+        });
+        });
+    </script>
+
+    <div class="product-lotties">
+        <div class="running-lottie" data-path="{% static 'mainapp/animations/running.json' %}">
+            <p>We deliver fast and efficient services, ensuring our customers receive their products within the shortest time possible, keeping them satisfied and ahead.</p>
+        </div>
+        <div class="customercare-lottie" data-path="{% static 'mainapp/animations/cc.json' %}">
+            <p>We provide exceptional customer care, ensuring that our clients receive prompt assistance and support to address their needs and concerns effectively.</p>
+        </div>
+        <div class="refund-lottie" data-path="{% static 'mainapp/animations/refund.json' %}">
+            <p class="refund-lottie-p">We offer a hassle-free refund process, ensuring our customers can easily return products and receive their money back quickly and efficiently.</p>
+        </div>
+    </div>
+
+
+    <!-- <section class="product-reviews">
         <h2>Customer Reviews</h2>
         <ul>
             <li>
@@ -26,6 +102,8 @@
             </li>
         </ul>
     </section>
+
+
     <section class="product-related">
         <h2>Related Products</h2>
         <ul>
@@ -38,6 +116,6 @@
                 <p>Related Product 2</p>
             </li>
         </ul>
-    </section>
+    </section> -->
 
 {% endblock %}

@@ -19,25 +19,28 @@
         <div>
             <img src="/media/handbag.jpg" alt="">
             <p>SUMMER HANDBAGS</p>
-            <button>CHECKOUT NEW STYLES</button>
+            <a href="{% url 'category' 'Bags'%}">CHECKOUT NEW STYLES</a>
         </div>
 
         <div>
             <img src="/media/hero-cloth.jpg" alt="">
             <P>NEW CLOTHINGS</P>
-            <button>DISCOVER FRESH FASHION</button>
+            <a href="{% url 'category' 'Clothes'%}">DISCOVER FRESH FASGION</a>
+    
         </div>
 
         <div>
             <img src="/media/hero-shoes.jpg" alt="">
             <P>DELUXE SHOES</P>
-            <button>NEW TREND HORIZONS</button>
+            <a href="{% url 'category' 'Shoes'%}">NEW TREND HORIZONS</a>
+        
         </div>
 
         <div>
             <img src="/media/hero-accessories.jpg" alt="">
             <P>ACCESSORIES</P>
-            <button>UNVIEL THE ALLURE</button>
+            <a href="{% url 'category' 'Accessories'%}">UNVEIL THE BLISS</a>
+  
         </div>
     </section>
 
@@ -75,54 +78,6 @@
 
             </div>
             {% endfor %}
-
-            <!-- <div class="ft-box-items">
-                <img src="/media/ft-bag3.webp" alt="">
-                <h2>SHALEWA HANDBAG</h2>
-                <h3>Dove black leather bag</h3>
-                <h4>N15,000</h4>
-            </div>
-
-            <div class="ft-box-items">
-                <img src="/media/ft-shoe2.webp" alt="">
-                <h2>KOIKOI PROMAX</h2>
-                <h3>black seal leather shoe</h3>
-                <h4>N10,000</h4>
-            </div>
-
-            <div class="ft-box-items">
-                <img src="/media/ft-dress1.webp" alt="">
-                <h2>AHSAWO GOWN</h2>
-                <h3>black faint cotton</h3>
-                <h4>N25,000</h4>
-            </div>
-            <div class="ft-box-items">
-                <img src="/media/fit-dress2.webp" alt="">
-                <h2>OLOSHO GOWN</h2>
-                <h3>Grey bright cotton</h3>
-                <h4>N15,000</h4>
-            </div>
-
-            <div class="ft-box-items">
-                <img src="/media/ft-shoe.webp" alt="">
-                <h2>KOIKOI SHOE</h2>
-                <h3>Thick leader shoe</h3>
-                <h4>N9,000</h4>
-            </div>
-
-            <div class="ft-box-items">
-                <img src="/media/ass-hat.webp" alt="">
-                <h2>BEACH HATS</h2>
-                <h3>brown handmade hat</h3>
-                <h4>6,000</h4>
-            </div>
-
-            <div class="ft-box-items">
-                <img src="/media/ass-watch.webp" alt="">
-                <h2>SHEIN WATCH</h2>
-                <h3>Glassy shien watch</h3>
-                <h4>N17,000</h4>
-            </div> -->
 
         </div>
     </section>

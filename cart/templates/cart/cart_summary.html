@@ -1,0 +1,90 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<section class="cart-page">
+    <div class="card-left">
+        <h2>My Shopping Cart</h2>
+        <div class="cart">
+            <div class="cart-items">
+              <div class="cart-item">
+                <div class="row">
+                  <div class="product-info">
+                    <img src="/media/products/ash-cloth.jpg" alt="Product Image" class="product-image">
+                    <h5>iPhone 11 128GB Black ($1219)</h5>
+                  </div>
+                  <div class="quantity-control">
+                    <div class="number-spinner">
+                      <button id="phone-minus" aria-label="Decrease Quantity">-</button>
+                      <input id="phone-number" type="number" min="1" value="1">
+                      <button id="phone-plus" aria-label="Increase Quantity">+</button>
+                    </div>
+                  </div>
+                  <div class="price-info">
+                    <h5>Total: $<span id="phone-total">1219</span></h5>
+                    <img src="/media/remove.png" alt="Remove Item" class="remove-item">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="cart-summary">
+              <h5>Subtotal: $<span id="sub-total">0</span></h5>
+              <h5>Tax: $<span id="tax-amount">0</span></h5>
+              <h5>Total: $<span id="total-price">0</span></h5>
+            </div>
+            <button class="check-out">Check Out</button>
+          </div>
+        <!-- <div class="cart">
+            <div class="cart-item">
+                <div class="row">
+                    <div class="center-item">
+                        <img src="/media/products/ash-cloth.jpg" alt="" class="center-img">
+                        <h5>iPhone 11 128GB Black ( $1219 )</h5>
+                    </div>
+                    <div class="center-item">
+                        <div class="number-spinner">
+                            <button id="phone-minus">-</button>
+                            <input id="phone-number" type="number" min="0" value="1">
+                            <button id="phone-plus">+</button>
+                        </div>
+                        <h5>N<span id="phone-total">1219</span></h5>
+                        <img src="/media/remove.png" alt="" class="remove-item">
+                    </div>
+                </div>
+            </div>
+
+            <div class="cart-item">
+                <div class="summary">
+                    <h5>Subtotal: $<span id="sub-total">0</span></h5>
+                    <h5>Tax: $<span id="tax-amount">0</span></h5>
+                    <h5>Total: $<span id="total-price">0</span></h5>
+                </div>
+            </div>
+            <button class="check-out">Check Out</button>
+        </div>
+    </div> -->
+
+    <div class="card-right">
+        <h2>Payment Options</h2>
+        <div class="payment-methods">
+            <img src="images/verve.png" alt="Verve">
+            <img src="images/mastercard.png" alt="MasterCard">
+            <img src="images/visa.png" alt="Visa">
+        </div>
+
+        <form class="payment-form">
+            <label for="card-number">Card Number</label>
+            <input type="text" id="card-number" placeholder="Enter card number" required>
+
+            <label for="expiry-date">Expiry Date</label>
+            <input type="text" id="expiry-date" placeholder="MM/YY" required>
+
+            <label for="cvv">CVV</label>
+            <input type="password" id="cvv" placeholder="CVV" required>
+
+            <button type="submit" class="pay-now">Pay Now</button>
+        </form>
+    </div>
+</section>
+{% endblock %}
+
+

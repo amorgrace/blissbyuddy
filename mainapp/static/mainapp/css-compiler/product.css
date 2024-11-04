@@ -1,0 +1,169 @@
+.product-details {
+    display: flex; /* Align children in a row */
+    max-width: 1500px; /* Max width of the section */
+    margin: 20px auto; /* Center the section */
+    padding: 20px;
+    /* border-radius: 8px; */
+    /* background-color: #f9f9f9; */
+}
+
+/* Left Side Styles */
+.product-details-left {
+    flex: 1; /* Takes up available space */
+    margin-right: 20px; /* Space between left and right */
+}
+
+.product-image {
+    max-width: 600px; /* Make image responsive */
+    height: 500px; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners for the image */
+}
+.product-image img {
+    width: 100%; /* Make image responsive */
+    height: 100%; /* Maintain aspect ratio */
+
+}
+
+/* lottie styles */
+
+.product-lotties {
+    display: flex;
+    flex-direction: row; 
+    align-items: center; /* Center align items */
+    gap: 60px; /* Space between Lottie items */
+}
+
+.product-lotties div {
+    top: -40px;
+    width: 500px; /* Set width for smaller Lotties */
+    height: 300px; /* Set height for smaller Lotties */
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    position: relative; /* Position relative for absolute children */
+    margin-left: 20px;
+}
+
+.product-lotties p {
+    position: absolute; /* Position text on top of Lottie */
+    bottom: -40px; /* Adjust text position below the Lottie */
+    text-align: center; /* Center the text */
+    width: 100%; /* Ensure text takes full width */
+    font-family: 'Jost';
+    font-weight: 400;
+    font-size: 14px; /* Font size for text */
+    color: #333; /* Text color */
+    margin: 0; /* Remove default margin */
+}
+.refund-lottie-p {
+    top: 280px;
+}
+
+/* Right Side Styles */
+.product-details-right {
+    flex: 1; /* Takes up available space */
+}
+
+.product-details-right h1 {
+    font-size: 24px; /* Larger font for product name */
+    margin: 0; /* Remove default margin */
+    font-family: 'Jost';
+    font-weight: 400;
+    font-size: 40px;
+}
+
+.product-details-right h2 {
+    font-size: 25px; /* Font size for price */
+    color: green; /* Green color for price */
+    margin: 10px 0; /* Margin above and below */
+    font-family: 'Jost';
+}
+
+.product-details-right strong{
+    margin: 10px 0; /* Margin for paragraph elements */
+    font-family: 'Jost';
+    font-weight: 700;
+    max-width: 100%;
+}
+
+.product-details-right span{
+    font-family: 'Jost';
+    font-weight: 400;
+}
+
+label {
+    font-weight: bold; /* Bold labels */
+    margin-top: 1px; /* Margin above labels */
+    font-weight: 400;
+    font-family: 'Jost';
+}
+
+/* Select Element Styles */
+select {
+    width: 100%; /* Full width for selects */
+    padding: 12px; /* Padding inside selects */
+    border: 2px solid #ddd; /* Border for selects */
+    /* border-radius: 4px;  */
+    margin-bottom: 5px; /* Space below selects */
+    font-weight: 400;
+    font-family: 'Jost';
+}
+
+/* Button Styles */
+.product-cart,
+.product-buynow {
+    display: block; /* Stack buttons vertically */
+    width: 100%; /* Full width for uniform look */
+    padding: 12px 20px;
+    margin-top: 20px;
+    border: none;
+    /* border-radius: 8px; */
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    margin-bottom: 10px; /* Space between buttons */
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+/* Add to Cart Button */
+.product-cart {
+    background-color: transparent; /* Blue color */
+    border: 2px solid rgb(220, 219, 219);
+    color: black;
+    font-weight: 400;
+    font-family: 'Jost';
+    font-size: 17px;
+}
+
+.product-cart:hover {
+    background-color: rgb(214, 214, 209);
+    transform: scale(1.05);
+}
+
+/* Buy Now Button */
+.product-buynow {
+    background-color: rgba(255, 68, 0, 0.887);
+    /* border: 2px solid rgb(220, 219, 219); */
+    color: white;
+    font-weight: 400;
+    font-family: 'Jost';
+    font-size: 17px;
+
+}
+
+.product-buynow:hover {
+    background-color: orangered;
+    transform: scale(1.07);
+    /* border: 2px solid rgb(220, 219, 219);
+    color: black; */
+}
+
+/* Socials Section */
+.product-socials{
+    margin-left: 280px;
+}
+
+.product-socials a{
+    margin-left: 20px;
+}

@@ -6,7 +6,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background-color: rgb(238, 238, 234);
+
     font-family: "Caveat", cursive;
     font-weight: bold;
     scroll-behavior: smooth;
@@ -25,12 +25,15 @@ header {
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     z-index: 1000; /* Keeps the header above other elements */
+    background-color: rgb(238, 238, 234);
+
+    
 }
 
 /* Add padding to the body to prevent content overlap */
 body {
     padding-top: 80px; /* Adjust this value to match the height of your header */
-    background-color: rgb(238, 238, 234);
+
 }
 
 

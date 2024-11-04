@@ -24,7 +24,7 @@
     display: block;
 }
 
-.categories p, .categories button {
+.categories p, .categories a {
     position: absolute;
     
     left: 50%;
@@ -41,7 +41,7 @@
     margin: 0;
 }
 
-.categories button {
+.categories a {
     bottom: 18%; /* Position button near the bottom */
     background-color: bisque; /* Set button background color to black */
     color: black; /* Set button text color to white */
@@ -49,9 +49,10 @@
     border-radius: 10px;
     padding: 10px 20px;
     cursor: pointer;
+    text-decoration: none;
 }
 
-.categories button:hover {
+.categories a:hover {
     background-color: black; /* Darker background on hover */
     color: white;
 }
