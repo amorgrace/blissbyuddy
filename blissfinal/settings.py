@@ -89,6 +89,8 @@ TEMPLATES = [
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'blissbyuddy.settings')
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+WHITENOISE_MAX_AGE = 31536000  # 1 year
+WHITENOISE_ALLOW_ALL_ORIGINS = True
 
 
 WSGI_APPLICATION = 'blissfinal.wsgi.application'
