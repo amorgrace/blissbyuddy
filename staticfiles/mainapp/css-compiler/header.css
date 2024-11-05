@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    font-family: "Caveat", cursive;
+    font-weight: bold;
+    scroll-behavior: smooth;
+
+}
+/* General Header Styling */
+/* General Header Styling */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; /* Ensures the header spans the full width of the page */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Keeps the header above other elements */
+    background-color: rgb(238, 238, 234);
+
+    
+}
+
+/* Add padding to the body to prevent content overlap */
+body {
+    padding-top: 80px; /* Adjust this value to match the height of your header */
+
+}
+
+
+.left-nav, .right-nav {
+    display: flex;
+    align-items: center;
+    
+}
+
+.left-nav a, .right-nav a {
+    text-decoration: none;
+    color: #333;
+    margin-right: 40px;
+    font-size: 17px;
+    /* position: relative; */
+    
+}
+
+.left-nav a::after, .right-nav a::after {
+    content: ''; /* Create a pseudo-element */
+    position: absolute; /* Position it absolutely */
+    left: 0; /* Align to the left */
+    bottom: 0; /* Align to the bottom */
+    height: 2px; /* Height of the underline */
+    width: 100%; /* Full width */
+    background: black; /* Underline color */
+    transform: scaleX(0); /* Initially hidden */
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.left-nav a:hover::after, .right-nav a:hover::after {
+    transform: scaleX(1); /* Expand underline on hover */
+}
+
+.right-nav a {
+    margin-right: 60px; /* Increase space between right-nav icons */
+    position: relative;
+}
+
+.left-nav i, .right-nav i {
+    margin-right: -1px;
+    font-size: 12px;
+}
+
+/* Logo Styling */
+.logo a {
+    text-decoration: none;
+    color: black;
+    font-family: "Kaushan Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+}
+
+/* Cart Count Styling */
+.cart-count {
+    position: absolute;
+    top: -4px;
+    right: -15px;
+    background-color: orangered;
+    color: white;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+}
+
+
+/* Submenu styles */
+.submenu {
+    position: fixed;
+    top: 0;
+    right: -550px; /* Initially off-screen to the right */
+    width: 450px;
+    height: 100%;
+    box-shadow: -4px 0 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: all 0.4s ease; /* Transition for sliding effect */
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+/* Slide in submenu when active */
+.submenu.active {
+    right: 0;
+}
+
+/* Close icon styling */
+.submenu-close {
+    display: inline-block; /* Use inline-block to make the circle fit around the icon */
+    text-align: center;
+    font-size: 1em;
+    width: 40px;  /* Set width and height to create a perfect circle */
+    height: 40px;
+    line-height: 40px;  /* Vertically center the icon */
+    margin-bottom: 20px;
+    color: black;
+}
+
+.submenu-close:hover {
+    color: orangered;  /* Add hover effect for better interactivity */
+}
+
+/* Submenu item list */
+.submenu ul {
+    list-style: none;
+    padding: 30px;
+}
+
+.submenu ul li {
+    margin: 40px 0;
+}
+
+.submenu ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.1em;
+    font-family: "Jost", sans-serif;
+    font-weight: 400;
+    display: inline-block;  /* Necessary for transform to work */
+    transition: transform 0.3s ease, color 0.3s ease;  /* Smooth transition */
+}
+
+/* Stylish zoom-in hover effect */
+.submenu ul li a:hover {
+    transform: scale(1.6);  /* Zoom in */
+    color: orangered;  /* Change color on hover */
+}

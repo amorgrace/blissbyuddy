@@ -1,0 +1,146 @@
+
+.login-container {
+    font-family: 'Jost';
+    max-width: 400px;
+    margin: 100px auto;  /* Center the login form */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 18px 20px rgba(0, 0, 0, 0.1);  /* Subtle shadow */
+    text-align: center;
+}
+
+.login-container h1 {
+    font-family: 'Jost', sans-serif;
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: black;
+}
+
+/* Form styles */
+.login-container form input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.login-container form input:focus {
+    border-color: orangered;  /* Focus effect */
+    outline: none;
+}
+
+/* Button styling */
+.login-container form button {
+    width: 100%;
+    padding: 12px;
+    margin: 15px 0;
+    font-size: 16px;
+    background-color: black; /* Change to preferred black color */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.login-container form button:hover {
+    background-color: orangered;  /* Darker shade on hover */
+}
+
+/* Alternative option styling */
+.alt-option {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.alt-option p {
+    margin: 5px 0;
+}
+
+.alt-option a {
+    color: #007bff; /* Subtle blue for links */
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.alt-option a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+
+/* for register page */
+/* General container styling */
+.register-container {
+    max-width: 450px;
+    margin: 50px auto;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.register-container h1 {
+    font-family: 'Jost';
+    margin-bottom: 25px;
+    font-size: 20px;
+    color: black;  /* Black for heading */
+}
+
+/* Form styles */
+.register-container form input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    font-size: 17px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.register-container form input:focus {
+    border-color: orangered;  /* Orangered for focus */
+    outline: none;
+}
+
+/* Button styling */
+.register-container form button {
+    width: 100%;
+    padding: 12px;
+    margin: 15px 0;
+    font-size: 19px;
+    background-color: black;   /* Black button */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.register-container form button:hover {
+    background-color: orangered;  /* Orangered on hover */
+}
+
+/* Alternative option styling */
+/* .alt-option {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.alt-option p {
+    margin: 5px 0;
+}
+
+.alt-option a {
+    color: blue; 
+    text-decoration: none;
+}
+
+.alt-option a:hover {
+    text-decoration: underline;
+} */
