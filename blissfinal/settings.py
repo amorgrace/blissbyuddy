@@ -36,7 +36,7 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 SECRET_KEY = os.getenv('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 # Application definition
 
@@ -62,7 +62,9 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'livereload.middleware.LiveReloadScript'
+    'livereload.middleware.LiveReloadScript',
+    'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
 ]
 
 
@@ -85,6 +87,9 @@ TEMPLATES = [
 ]
 
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'blissbyuddy.settings')
+
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
 
 WSGI_APPLICATION = 'blissfinal.wsgi.application'
 # application = get_wsgi_application()
@@ -157,4 +162,4 @@ STATICFILES_DIRS = [
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-ALLOWED_HOSTS = ['blissbyuddy.onrender.com']
+ALLOWED_HOSTS = ['blissbyuddy.onrender.com', 'localhost']
