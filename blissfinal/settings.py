@@ -87,7 +87,7 @@ TEMPLATES = [
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'blissbyuddy.settings')
 
 WSGI_APPLICATION = 'blissfinal.wsgi.application'
-application = get_wsgi_application()
+# application = get_wsgi_application()
 
 
 # Database
